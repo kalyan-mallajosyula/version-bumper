@@ -1,0 +1,23 @@
+name: Version Bumper
+description: Bumps up versions in the pom.xml file based on provided refs and strategy.
+author: Your Name
+inputs:
+  head_ref:
+    description: 'The head reference (branch name).'
+    required: false
+  base_ref:
+    description: 'The base reference (branch name).'
+    required: false
+  strategy:
+    description: 'The strategy to bump the version (major, minor, patch). Defaults to patch.'
+    required: false
+    default: 'patch'
+  current_version:
+    description: 'The current version to be bumped.'
+    required: true
+outputs:
+  target_version:
+    description: 'The bumped target version.'
+runs:
+  using: 'node16'
+  main: 'index.js'
