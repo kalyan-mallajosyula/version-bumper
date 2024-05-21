@@ -1,6 +1,5 @@
-// index.js
-
 const core = require('@actions/core');
+const github = require('@actions/github');
 
 function parseVersion(version) {
     const snapshot = version.includes('-SNAPSHOT');
