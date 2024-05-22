@@ -19,5 +19,5 @@ outputs:
   target_version:
     description: 'The bumped target version.'
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: 'node20'
+  main: 'action/index.js'
