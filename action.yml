@@ -1,6 +1,6 @@
-name: Version Bumper
+name: Maven Version Bumper GASh
 description: Bumps up versions in the pom.xml file based on provided refs and strategy.
-author: Your Name
+author: Kalyan M
 inputs:
   head_ref:
     description: 'The head reference (branch name).'
